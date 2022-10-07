@@ -1,23 +1,37 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3: Web APIs & NLP
+# Subreddit Classification & NLP EDA
 
-### Description
+### Introduction & Problem Statement
+I am a Data Scientist for the 2024 Presidential Campaign. My role is to collect and analyze data in order to identify what topics Democrats and Republicans are most concerned with and how these topics resonates within each group so that we can formulate a winning campaign strategy. Lastly we would like to build a model that can identify whether a voter is Democrat or Republican based on their posts.
 
-In week four we've learned about a few different classifiers. In week five we learned about webscraping, APIs, and Natural Language Processing (NLP). This project will put those skills to the test.
-
-For project 3, your goal is two-fold:
-1. Using [Pushshift's](https://github.com/pushshift/api) API, you'll collect posts from two subreddits of your choosing.
-2. You'll then use NLP to train a classifier on which subreddit a given post came from. This is a binary classification problem.
-
-
-#### About the API
-
-Pushshift's API is fairly straightforward. For example, if I want the posts from [`/r/boardgames`](https://www.reddit.com/r/boardgames), all I have to do is use the following url: https://api.pushshift.io/reddit/search/submission?subreddit=boardgames
-
-To help you get started, we have a primer video on how to use the API: https://youtu.be/AcrjEWsMi_E
-
-**NOTE:** Pushshift now limits you to 100 posts per request (no longer the 500 in the screencast).
-
+Approach
+1. Pull posts from the Republican and Democrat Subreddit API 
+2. Clean & Prepare Data for Modeling utilizing Regex
+3. Analyze Common Topics & Sentiment using Vader Sentiment & Count Vectorizer 
+4. Build and Evaluate the accuracy across various Classification Models
 ---
+
+### Data Collection & Cleaning
+Democrat Subreddit- (Include Link to Subreddit)
+Republican Subreddit- (Include Link to Subreddit)
+
+In total I pulled approximately 10k submission from each Subreddit thread. I filtered out submissions that were removed from the thread so that I only include posts that are currently on each thread as many submissions are removed by moderators or users themselves. Once I filtered down on live posts I performed the following cleaning steps.
+
+1. Lowercase the titles
+2. Remove Duplicates
+3. Remove URLs
+4. Identify Word Count of Each Post & Remove Posts below the interquartile range because they had too few words to be used meaningfully.
+
+### EDA
+![Alt text](../images/TopRep.jpg)
+
+
+
+### Modeling
+
+### Conclusion & Recommendations
+
+
+
 
 ### Requirements
 
@@ -157,12 +171,3 @@ For Project 3 the evaluation categories are as follows:<br>
 
 
 ---
-
-### Why did we choose this project for you?
-This project covers three of the biggest concepts we cover in the class: Classification Modeling, Natural Language Processing and Data Wrangling/Acquisition.
-
-Part 1 of the project focuses on **Data wrangling/gathering/acquisition**. This is a very important skill as not all the data you will need will be in clean CSVs or a single table in SQL.  There is a good chance that wherever you land you will have to gather some data from some unstructured/semi-structured sources; when possible, requesting information from an API, but sometimes scraping it because they don't have an API (or it's terribly documented).
-
-Part 2 of the project focuses on **Natural Language Processing** and converting standard text data (like Titles and Comments) into a format that allows us to analyze it and use it in modeling.
-
-Part 3 of the project focuses on **Classification Modeling**.  Given that project 2 was a regression focused problem, we needed to give you a classification focused problem to practice the various models, means of assessment and preprocessing associated with classification.   
