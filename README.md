@@ -44,5 +44,5 @@ I built and tuned 5 models including LogisticRegression, RandomForestClassifier,
 
 
 ### Conclusion & Recommendations
-(#Conclusion-&-Recommendations)
+#conclusion-&-recommendations
 In conclusion I identified several overlapping and unique topics which can be used for building a strategic campaign where we appeal to both groups or one group individually. Although challenging we can build a model that classifies a user as Democrat or Republican based on social media posts on platforms such as Reddit. Our top model Random Forest Classifier has proven to accurately classify 75% of users and if we are more concerned about misclassifying our base party as the other political party we can use sensitivity (optimize false negatives) if our base is Republican or specificity(optimize false positives) if our base is Democrat.
