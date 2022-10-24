@@ -1,11 +1,11 @@
 # Subreddit Classification & NLP EDA
 
 ### Table of Contents
-1) [Introduction & Problem Statement](#Introduction-&-Problem-Statement)
-2) [Data Collection & Cleaning](#Data-Collection-&-Cleaning)
+1) [Introduction & Problem Statement](#introduction-&-problem-statement)
+2) [Data Collection & Cleaning](#data-collection-&-cleaning)
 3) [EDA](#EDA)
 4) [Modeling](#Modeling)
-5) [Conclusion](#Conclusion-&-Recommendations)
+5) [Conclusion](#conclusion-&-recommendations)
 ### Introduction & Problem Statement 
 I am a Data Scientist for the 2024 Presidential Campaign. My role is to collect and analyze data in order to identify what topics Democrats and Republicans are most concerned with and how these topics resonates within each group so that we can formulate a winning campaign strategy. Lastly we would like to build a model that can identify whether a voter is Democrat or Republican based on their posts.
 
