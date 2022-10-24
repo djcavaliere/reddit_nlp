@@ -30,7 +30,7 @@ In total I pulled approximately 10k submission from each Subreddit thread. I fil
 3. Remove URLs
 4. Identify Word Count of Each Post & Remove Posts below the interquartile range because they had too few words to be used meaningfully.
 
-**DATA DICTIONARY**
+# DATA DICTIONARY
 
 Due to the combined
 
