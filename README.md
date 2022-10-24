@@ -6,7 +6,6 @@
 3) [EDA](#EDA)
 4) [Modeling](#Modeling)
 5) [Conclusion](#Conclusion)
-6) [Data Dictionary](#data-dictionary)
 
 
 ### Introduction & Problem Statement 
@@ -29,10 +28,6 @@ In total I pulled approximately 10k submission from each Subreddit thread. I fil
 2. Remove Duplicates
 3. Remove URLs
 4. Identify Word Count of Each Post & Remove Posts below the interquartile range because they had too few words to be used meaningfully.
-
-# DATA DICTIONARY
-
-Due to the combined
 
 ### EDA
 I identified the most common words in each subreddit, words frequently used by one group but not the other as well as sampling of posts with high sentiment scores to see what voters feel strongly about. The takeaway from this EDA is that there is significant overlap between what the two groups are focused on and the words that they use to discuss these topics. This overlap will make modeling quite challenging so I will need to deploy a series of techinques to improve accuracy.
